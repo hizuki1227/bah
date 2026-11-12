@@ -7,8 +7,12 @@ const bubble = document.getElementById("bubble");
 const sounds = {
     bah: { audio: new Audio(SRC + "Bah.mp3"), text: "ﾊﾞｧｧｧｧ🦒" },
     pa: { audio: new Audio(SRC + "Pa.mp3"), text: "ﾊﾟｯｯ" },
-    killYou: { audio: new Audio(SRC + "killYou.mp3"), text: "ﾌﾞﾁﾞｺﾞﾛｽｩｩｩ" },
+    killYou: { audio: new Audio(SRC + "killYou.mp3"), text: "ﾌﾞﾁﾞｺﾞﾛｽｩｩｩ🔪" },
     yeah: { audio: new Audio(SRC + "yeah.mp3"), text: "遺影" },
+    iCant: { audio: new Audio(SRC + "Icant.mp3"), text: "出来るｶｧ" },
+    rateDown: { audio: new Audio(SRC + "rateDown.mp3"), text: "レート下がっても良いﾓﾝ😡" },
+    Faaa: { audio: new Audio(SRC + "Faaa.mp3"), text: "&%*#$?*@" },
+    nn: { audio: new Audio(SRC + "Nn.mp3"), text: "ン゙ﾝ!!!" },
 };
 Object.values(sounds).forEach(s => (s.audio.preload = "auto"));
 
@@ -52,3 +56,7 @@ document.getElementById("bahBtn").addEventListener("click", () => fire("bah"));
 document.getElementById("paBtn").addEventListener("click", () => fire("pa"));
 document.getElementById("killYouBtn").addEventListener("click", () => fire("killYou"));
 document.getElementById("yeahBtn").addEventListener("click", () => fire("yeah"));
+document.getElementById("faaaBtn").addEventListener("click", () => fire("Faaa"));
+document.getElementById("iCantBtn").addEventListener("click", () => fire("iCant"));
+document.getElementById("nnBtn").addEventListener("click", () => fire("nn"));
+document.getElementById("rateDownBtn").addEventListener("click", () => fire("rateDown"));
